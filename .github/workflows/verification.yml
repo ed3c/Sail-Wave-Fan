@@ -1,0 +1,26 @@
+name: Offline manufacturing-cell verification
+
+on:
+  push:
+    branches: ["main", "feat/origami-manufacturing-cell"]
+  pull_request:
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python version
+        run: python --version
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Existing template checks
+        run: python scripts/verify_templates.py
+      - name: CLI curve probe dry-run
+        run: |
+          python -m sailwave_cell generate --variant curve-probe --out /tmp/sailwave-probe
+          python -m sailwave_cell plan --design /tmp/sailwave-probe/pattern.json --machine cameo5_emboss_unverified --out /tmp/sailwave-job.json
+          python -m sailwave_cell dry-run --job /tmp/sailwave-job.json

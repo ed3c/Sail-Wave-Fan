@@ -4,6 +4,19 @@ An experimental **ribless origami rave fan** made from water-resistant synthetic
 
 > **Engineering status: V0.1 prototype.** The original source demonstrates an origami paper fan; the A3 Tyvek scale-up and Sail Wave asymmetric trim have **not** been validated as real products. Concept art is not fabrication evidence.
 
+## Manufacturing Cell V0.2 (software prototype)
+
+**[Architecture, CLI and verification gates](docs/Manufacturing_Cell_V0.2.md)**. Five-stage state machine: generate → score → camera readback → transfer → fold. Today the Python CLI generates B0-A3 and curved probe SVGs, enforces a machine-envelope gate, and accepts strictly ordered *external observation* receipts; it does **not** actuate machinery, read a camera, move paper, or fold a fan.
+
+```sh
+python -m sailwave_cell generate --variant curve-probe --out build/curve
+python -m sailwave_cell plan --design build/curve/pattern.json --machine cameo5_emboss_unverified --out build/curve/job.json
+python -m sailwave_cell dry-run --job build/curve/job.json
+python -m unittest discover -s tests -v
+```
+
+`cameo5_emboss_unverified` is a conservative uncalibrated capability profile. The full 420 × 297 mm sheet is rejected for this profile, as it should be. Physical stages remain blocked without observations.
+
 ## Repository contents
 
 - [Prototype manufacturing specification V0.1](docs/Prototype_Spec_V0.1.md) — dimensions, bill of materials, assembly, safety notes, verification gates.
