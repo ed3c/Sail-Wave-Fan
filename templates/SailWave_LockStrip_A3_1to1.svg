@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52.5mm" height="226.3mm" viewBox="0 0 52.5 226.3">
+<rect x=".2" y=".2" width="52.1" height="225.9" fill="none" stroke="black" stroke-width=".4"/>
+<line x1="0.000" y1="28.300" x2="52.500" y2="28.300" style="stroke:#168d85;stroke-width:.4;stroke-dasharray:4,2"/>
+<line x1="0.000" y1="99.000" x2="52.500" y2="99.000" style="stroke:#168d85;stroke-width:.4;stroke-dasharray:4,2"/>
+<line x1="0.000" y1="127.300" x2="52.500" y2="127.300" style="stroke:#168d85;stroke-width:.4;stroke-dasharray:4,2"/>
+<line x1="0.000" y1="198.000" x2="52.500" y2="198.000" style="stroke:#168d85;stroke-width:.4;stroke-dasharray:4,2"/>
+<line x1="26.250" y1="0.000" x2="26.250" y2="226.300" style="stroke:#8f60b3;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<text x="2" y="18" font-size="5">Lock strip 1:1</text>
+</svg>

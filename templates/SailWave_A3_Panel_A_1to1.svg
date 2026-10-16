@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect x="0.2" y="0.2" width="419.6" height="296.6" fill="none" stroke="black" stroke-width=".4"/>
+<line x1="26.250" y1="0.000" x2="26.250" y2="297.000" style="stroke:#4278b7;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="52.500" y1="0.000" x2="52.500" y2="297.000" style="stroke:#8f60b3;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="78.750" y1="0.000" x2="78.750" y2="297.000" style="stroke:#4278b7;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="105.000" y1="0.000" x2="105.000" y2="297.000" style="stroke:#8f60b3;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="131.250" y1="0.000" x2="131.250" y2="297.000" style="stroke:#4278b7;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="157.500" y1="0.000" x2="157.500" y2="297.000" style="stroke:#8f60b3;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="183.750" y1="0.000" x2="183.750" y2="297.000" style="stroke:#4278b7;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="210.000" y1="0.000" x2="210.000" y2="297.000" style="stroke:#8f60b3;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="236.250" y1="0.000" x2="236.250" y2="297.000" style="stroke:#4278b7;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="262.500" y1="0.000" x2="262.500" y2="297.000" style="stroke:#8f60b3;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="288.750" y1="0.000" x2="288.750" y2="297.000" style="stroke:#4278b7;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="315.000" y1="0.000" x2="315.000" y2="297.000" style="stroke:#8f60b3;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="341.250" y1="0.000" x2="341.250" y2="297.000" style="stroke:#4278b7;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="367.500" y1="0.000" x2="367.500" y2="297.000" style="stroke:#8f60b3;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="393.750" y1="0.000" x2="393.750" y2="297.000" style="stroke:#4278b7;stroke-width:.32;stroke-dasharray:2,1.5"/>
+<line x1="0.000" y1="14.000" x2="420.000" y2="14.000" style="stroke:#168d85;stroke-width:.4;stroke-dasharray:4,2"/>
+<line x1="0.000" y1="226.000" x2="420.000" y2="226.000" style="stroke:#168d85;stroke-width:.4;stroke-dasharray:4,2"/>
+<text x="10" y="293" font-size="5.4" fill="#333">A: full-height baseline panel | 100% scale | 16 pleat sections</text>
+</svg>
