@@ -64,6 +64,11 @@ class CellTests(unittest.TestCase):
         measured_bad = [[15, 10], [135, 10], [15, 130]]
         self.assertFalse(registration_result(expected, measured_bad, self.job["limits"])["passed"])
 
+    def test_collinear_fiducials_rejected(self):
+        marks = [[0, 0], [10, 10], [20, 20]]
+        with self.assertRaisesRegex(GateError, "collinear"):
+            registration_result(marks, marks, self.job["limits"])
+
     def test_complete_observed_evidence_chain(self):
         score = {"mode": "OBSERVED", "operator": "test-op",
                  "machine_receipt": "external-record-123", "material_loaded": True,

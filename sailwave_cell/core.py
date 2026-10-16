@@ -186,6 +186,13 @@ def registration_result(expected, measured, limits):
         for xy in points:
             if len(xy) != 2 or not all(isinstance(v, (int, float)) and math.isfinite(v) for v in xy):
                 raise GateError("Invalid fiducial coordinates")
+        # Three coincident/collinear marks cannot establish a 2-D registration plane.
+        ax, ay = points[0]
+        if max(abs((points[i][0]-ax)*(points[j][1]-ay)
+                   -(points[i][1]-ay)*(points[j][0]-ax))
+               for i in range(1, len(points))
+               for j in range(i+1, len(points))) < 1e-6:
+            raise GateError("Degenerate or collinear fiducials")
     # 2D rigid fit; no scale/shear or pixel-to-mm calibration is inferred.
     ex = sum(p[0] for p in expected) / len(expected)
     ey = sum(p[1] for p in expected) / len(expected)
